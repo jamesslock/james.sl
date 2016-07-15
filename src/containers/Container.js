@@ -1,7 +1,4 @@
 import React, {Component, PropTypes} from "react";
-import Helmet from "react-helmet";
-
-// Import Organism Components
 
 // Import Styles
 import styles from 'global/main.css';

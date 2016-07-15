@@ -37,13 +37,6 @@ module.exports = {
           test: /\.css$/,
           loader: ExtractTextPlugin.extract('style-loader', `css-loader?${cssLoaderConfig}`)
       },
-			{
-        test: /.*\.(gif|png|jpe?g|svg)$/i,
-        loaders: [
-          'file?hash=sha512&digest=hex&name=[hash].[ext]',
-          'image-webpack'
-        ]
-      },
 		],
 		noParse: /\.min\.js/
 	},
@@ -52,7 +45,7 @@ module.exports = {
 
 		require('lost'),
 
-	require('postcss-nested')(),
+		require('postcss-nested')(),
 
     require('postcss-custom-properties')({
       variables: map.vars
@@ -68,7 +61,7 @@ module.exports = {
 
     require('postcss-calc')(),
 
-	require('postcss-color-function')()
+		require('postcss-color-function')()
   ],
 	resolve: {
 		modulesDirectories: [

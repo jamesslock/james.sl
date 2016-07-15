@@ -1,16 +1,1 @@
 @import './variables.css';
-@import './type.css';
-
-@lost gutter 60px;
-
-:global * {
-  box-sizing: border-box;
-}
-img {
-	max-width: 100%;
-	height: auto;
-}
-.imageFull {
-	width: 100%;
-	height: auto;
-}

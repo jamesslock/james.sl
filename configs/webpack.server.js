@@ -41,13 +41,6 @@ module.exports = {
 				loaders: ["json"]
 			},
 			{
-        test: /.*\.(gif|png|jpe?g|svg)$/i,
-        loaders: [
-          'file?hash=sha512&digest=hex&name=[hash].[ext]',
-          'image-webpack'
-        ]
-      },
-			{
 				test: /\.js$/,
 				loaders: ["babel?presets[]=es2015&presets[]=stage-0&presets[]=react"],
 				exclude: /node_modules/
@@ -64,7 +57,7 @@ module.exports = {
 
 		require('lost'),
 
-	require('postcss-nested')(),
+		require('postcss-nested')(),
 
     require('postcss-custom-properties')({
       variables: map.vars
@@ -80,7 +73,7 @@ module.exports = {
 
     require('postcss-calc')(),
 
-	require('postcss-color-function')()
+		require('postcss-color-function')()
   ],
 	externals: nodeModules,
 	resolve: {

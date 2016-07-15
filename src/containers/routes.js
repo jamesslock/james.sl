@@ -5,7 +5,7 @@
 import React from "react";
 import {Router, Route, IndexRoute} from "react-router";
 
-// Page & Container Imports
+// Marketing site
 import Container from "./Container";
 import Home from 'components/pages/Home/Home';
 

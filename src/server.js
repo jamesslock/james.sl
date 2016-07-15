@@ -46,14 +46,9 @@ try {
               <head>
                 <meta charset="utf-8">
 
-                <link href='//google-analytics.com' rel='dns-prefetch'>
-                <link href='//fonts.googleapis.com' rel='dns-prefetch'>
-
                 ${head.title.toString()}
                 ${head.meta.toString()}
                 ${head.link.toString()}
-
-                <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
 
                 ${styleTag}
               </head>
