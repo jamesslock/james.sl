@@ -1,0 +1,20 @@
+.root {
+  display: table;
+  width: 100%;
+}
+.image,
+.body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.image {
+  padding-right: 10px;
+
+  > img {
+    display: block;
+    max-width: none;
+  }
+}
+.body {
+  width: 100%;
+}

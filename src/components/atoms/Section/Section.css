@@ -1,0 +1,51 @@
+/***** Section Base Component *****/
+.root {
+  position: relative;
+  width: 100%;
+}
+
+/***** Section Context *****/
+.primary {
+    background-color: var(--colorPrimary);
+    color: white;
+
+    h1, h2, h3 {
+      color: white;
+    }
+}
+.secondary {
+    background-color: var(--colorSecondary);
+    color: white;
+
+    h1, h2, h3 {
+      color: white;
+    }
+}
+.tertiary {
+    background-color: var(--colorGrayLightest);
+}
+
+/***** Section Sizes *****/
+.small {
+	padding-top: var(--spacingSmall);
+	padding-bottom: var(--spacingSmall);
+}
+.medium {
+  padding-top: var(--spacingSmall);
+	padding-bottom: var(--spacingSmall);
+  
+  @media only screen and (min-width: 600px) {
+  	padding-top: var(--spacingMedium);
+  	padding-bottom: var(--spacingMedium);
+  }
+}
+
+.large {
+  padding-top: var(--spacingMedium);
+	padding-bottom: var(--spacingMedium);
+
+  @media only screen and (min-width: 600px) {
+  	padding-top: var(--spacingLarge);
+  	padding-bottom: var(--spacingLarge);
+  }
+}

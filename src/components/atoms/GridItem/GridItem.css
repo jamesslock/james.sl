@@ -1,0 +1,9 @@
+.root {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    position: relative;
+}
+.root:not(:first-child) {
+    margin-top: 20px;
+}

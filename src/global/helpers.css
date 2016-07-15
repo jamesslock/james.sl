@@ -1,0 +1,42 @@
+/* Padding Helpers */
+.paddingTopNone {
+  padding-top: 0;
+}
+.paddingBottomNone {
+  padding-bottom: 0;
+}
+
+/* Margin Helpers */
+.marginRightSmall {
+  margin-right: 15px;
+}
+.marginTopNone {
+  margin-top: 0;
+}
+
+/* Text Helpers */
+.textCenter {
+	text-align: center;
+}
+.colorLight {
+  color: white;
+}
+.colorGray {
+  color: var(--colorGray);
+}
+.fW700 {
+  font-weight: 700;
+}
+
+/* Layout Helpers */
+.verticalAlign {
+    display: flex;
+    align-items: center;
+}
+.imageFull {
+  width: 100%;
+  height: auto;
+}
+.displayFlex {
+  display: flex;
+}

@@ -1,0 +1,50 @@
+/***** Color Variables *****/
+:root {
+    /* Base Colors */
+    --colorGreen: #95d06d;
+    --colorRed: #eb3552;
+    --colorBlue: #41c1c8;
+    --colorBlueDark: #00587f;
+    --colorOrange: #f7931d;
+    --colorYellow: #d0ca6d;
+    --colorGray: #979797;
+    --colorGrayDark: #2F2F2F;
+    --colorGrayLight: #e7e7e7;
+    --colorGrayLightest: #FAFAFA;
+
+    /* Social Colors */
+    --colorFacebook: #3b5998;
+    --colorTwitter: #55ACEE;
+    --colorGoogle: #d14836;
+
+    /* Named Colors */
+    --colorPrimary: var(--colorRed);
+    --colorSecondary: var(--colorBlueDark);
+    --colorTertiary: var(--colorOrange);
+    --colorPositive: var(--colorGreen);
+    --colorNegative: var(--colorRed);
+
+    /* Background Colors */
+    --colorBackground: var(--colorGrayLightest);
+
+    /* Font Colors */
+    --colorFont: var(--colorGray);
+    --colorFontHeading: var(--colorGrayDark);
+    --colorFontAccent: var(--colorBlue);
+
+    /* Link Colors */
+    --colorLink: var(--colorBlue);
+}
+
+/***** Spacing Variables *****/
+:root {
+    /* Base Spacing */
+    --spacingSmall: 15px;
+    --spacingMedium: 30px;
+    --spacingLarge: 60px;
+}
+
+/***** Typography Variables *****/
+:root {
+  --fontFamily: 'PT Sans', sans-serif;
+}

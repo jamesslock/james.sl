@@ -1,0 +1,74 @@
+/*
+* Rolling with a modular scale here, set this up however you want yo
+* http://www.modularscale.com/
+*/
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+body {
+  font-size: 18px;
+  font-family: var(--fontFamily);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8em;
+  color: var(--colorGray);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--colorPrimary);
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: color(var(--colorPrimary) lightness(-10%));
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.4em;
+  color: var(--colorFontHeading);
+  text-rendering: optimizeLegibility; /* Fix the character spacing for headings */
+}
+
+h1 {
+  font-size: 28px;
+  @media only screen and (min-width: 500px) {
+    font-size: 32px;
+  }
+}
+h2 {
+  font-size: 20px;
+  @media only screen and (min-width: 500px) {
+    font-size: 24px;
+  }
+}
+
+:global .followon {
+  font-size: 22px;
+  margin: 0 0 20px;
+  line-height: 1.8em;
+
+  @media only screen and (min-width: 800px) {
+    margin: 0 0 40px;
+  }
+}
+
+hr {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  height: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--colorGrayLight);
+}
+
+blockquote {
+  padding: 0;
+  margin: 0;
+}

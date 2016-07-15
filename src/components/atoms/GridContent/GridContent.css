@@ -1,0 +1,21 @@
+.root {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      bottom: 0;
+      min-height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      min-width: 100%;
+    }
+}
+.square {
+    height: 0;
+    padding-top: 100%;
+}
