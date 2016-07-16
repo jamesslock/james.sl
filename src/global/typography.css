@@ -17,4 +17,6 @@ a {
   text-decoration: none;
   color: var(--colorGrayDarkest);
   display: inline-block;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2px, black 2px, black 2.5px, rgba(0, 0, 0, 0) 2.5px);
 }
