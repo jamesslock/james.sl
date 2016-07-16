@@ -1,0 +1,7 @@
+.verticalCenter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	resize: vertical;
+	overflow: auto;
+}

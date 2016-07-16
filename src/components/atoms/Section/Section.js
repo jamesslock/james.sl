@@ -1,21 +1,23 @@
 import React, { Component, PropTypes } from 'react';
 
-import css from './Container.css';
+import s from './Section.css';
 
-export default class Container extends Component {
+export default class Section extends Component {
   render() {
 
     const {
       className,
       children,
+      context,
       size,
       ...remainingProps,
     } = this.props;
 
     const classNames = [
-      css.root,
-      css ? css[css] : null,
-      size ? css[size] : null,
+      s.root,
+      context ? s[context] : null,
+      s ? s[s] : null,
+      size ? s[size] : null,
       className,
     ].join(' ');
 
@@ -33,13 +35,18 @@ export default class Container extends Component {
   }
 };
 
-Container.propTypes = {
+Section.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
+  context: PropTypes.oneOf([
+    'primary',
+    'secondary',
+    'tertiary'
+  ]),
   size: PropTypes.oneOf([
     'small',
     'medium',
-    'smallest',
-    'full',
+    'large',
+    'huge',
   ]),
 };

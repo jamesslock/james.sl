@@ -61,6 +61,8 @@ module.exports = {
 
     require('postcss-calc')(),
 
+		require('postcss-responsive-type')(),
+
 		require('postcss-color-function')()
   ],
 	resolve: {

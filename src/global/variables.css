@@ -46,5 +46,5 @@
 
 /***** Typography Variables *****/
 :root {
-  --fontFamily: 'PT Sans', sans-serif;
+  --fontSansSerif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

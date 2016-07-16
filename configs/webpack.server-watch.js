@@ -47,7 +47,9 @@ config.postcss = [
 		extensions: map.selector
 	}),
 
-	require('postcss-calc')()
+	require('postcss-calc')(),
+
+	require('postcss-responsive-type')(),
 ];
 
 module.exports = config;

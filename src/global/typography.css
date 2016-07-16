@@ -1,0 +1,20 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+body {
+  font-size: 18px;
+  font-family: var(--fontSansSerif);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8em;
+  color: var(--colorGrayDarkest);
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--colorGrayDarkest);
+  display: inline-block;
+}

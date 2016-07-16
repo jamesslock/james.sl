@@ -1,25 +1,24 @@
 import React, { Component, PropTypes } from 'react';
 
-import styles from './Section.css';
+import s from './Hero.css';
 
-export default class Section extends Component {
+export default class Hero extends Component {
   render() {
 
     const {
       className,
       children,
-      context,
       size,
       ...remainingProps,
     } = this.props;
 
     const classNames = [
-      styles.root,
-      context ? styles[context] : null,
-      styles ? styles[styles] : null,
-      size ? styles[size] : null,
+      s.root,
+      s ? s[s] : null,
+      size ? s[size] : null,
       className,
     ].join(' ');
+
 
     return (
 
@@ -30,23 +29,13 @@ export default class Section extends Component {
         {children}
       </div>
 
-    )
-
-  }
+    )}
 };
 
-Section.propTypes = {
+Hero.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
-  context: PropTypes.oneOf([
-    'primary',
-    'secondary',
-    'tertiary'
-  ]),
   size: PropTypes.oneOf([
-    'small',
-    'medium',
     'large',
-    'huge',
   ]),
 };

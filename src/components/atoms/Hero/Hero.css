@@ -1,0 +1,9 @@
+/***** Base Component *****/
+.root {
+    position: relative;
+}
+
+/***** Hero Sizes *****/
+.full {
+  min-height: 100vh;
+}

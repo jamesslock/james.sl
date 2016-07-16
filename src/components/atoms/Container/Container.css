@@ -1,37 +1,21 @@
-:root {
-  /* Layout */
-  --maxWidth: 1280px;
-}
-
 .root {
-  max-width: var(--maxWidth);
   margin: auto;
-  padding: 0 20px;
-  lost-utility: clearfix;
-
-  @media only screen and (min-width: 560px) {
-    padding: 0 30px;
-  }
-}
-.root:before,
-.root:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-.root:after {
-    clear: both;
+  padding: 0 5%;
 }
 
-
+/***** Container Sizes *****/
 .medium {
   max-width: 960px;
 }
 .small {
-  max-width: 800px;
+  max-width: 840px;
 }
 .smallest {
   max-width: 580px;
 }
-.full {
-  max-width: 100%;
+
+/***** Container Alignment *****/
+.left {
+  margin: 0;
+  padding: 0;
 }
