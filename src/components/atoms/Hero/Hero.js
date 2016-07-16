@@ -36,6 +36,6 @@ Hero.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
   size: PropTypes.oneOf([
-    'large',
+    'full',
   ]),
 };
