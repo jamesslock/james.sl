@@ -26,11 +26,25 @@ export default class Menu extends Component {
       <div className={[classNames, verticalCenter].join(' ')}>
         <Section>
           <Container>
-            <h1>Menu</h1>
-            <nav role="navigation">
-              <Link to="/" onClick={onLinkClick}>Home</Link>
-              <Link to="/post" onClick={onLinkClick}>Post</Link>
-            </nav>
+            <Container size="small" align="left">
+              <nav className={s.nav} role="navigation">
+                <div className={s.navItem}>
+                  <Link to="/" onClick={onLinkClick}>Home</Link>
+                </div>
+                <div className={s.navItem}>
+                  <Link to="/post" onClick={onLinkClick}>About</Link>
+                </div>
+                <div className={s.navItem}>
+                  <Link to="/" onClick={onLinkClick}>Writing</Link>
+                </div>
+                <div className={s.navItem}>
+                  <Link to="/post" onClick={onLinkClick}>Contact</Link>
+                </div>
+              </nav>
+            </Container>
+            <Container size="small" align="left">
+              <p>What I'm <Link to="/">Reading</Link> / <Link to="/">Watching</Link> / <Link to="/">Listening</Link></p>
+            </Container>
           </Container>
         </Section>
       </div>

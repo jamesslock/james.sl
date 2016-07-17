@@ -19,7 +19,7 @@ a {
   color: var(--colorGold);
   display: inline-block;
 }
-p a {
+p a, nav a {
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2px, var(--colorGold) 2px, var(--colorGold) 2.5px, rgba(0, 0, 0, 0) 2.5px);
 }
