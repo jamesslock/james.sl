@@ -55,6 +55,7 @@
     "react": "15.2.1",
     "react-dom": "15.2.1",
     "react-helmet": "^3.1.0",
+    "react-motion": "^0.4.4",
     "react-router": "2.5.2",
     "react-transmit": "3.1.7",
     "style-loader": "^0.13.0",
