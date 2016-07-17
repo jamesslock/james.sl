@@ -1,39 +1,28 @@
 /***** Color Variables *****/
 :root {
     /* Base Colors */
-    --colorGreen: #95d06d;
-    --colorRed: #eb3552;
-    --colorBlue: #41c1c8;
-    --colorBlueDark: #00587f;
-    --colorOrange: #f7931d;
-    --colorYellow: #d0ca6d;
+    --colorGold: #C5AE87;
+    --colorGoldLight: #D8CDBD;
+    --colorGoldLightest: #E9DDCC;
     --colorGray: #979797;
     --colorGrayDark: #2F2F2F;
     --colorGrayLight: #e7e7e7;
     --colorGrayLightest: #FAFAFA;
 
-    /* Social Colors */
-    --colorFacebook: #3b5998;
-    --colorTwitter: #55ACEE;
-    --colorGoogle: #d14836;
-
     /* Named Colors */
-    --colorPrimary: var(--colorRed);
-    --colorSecondary: var(--colorBlueDark);
-    --colorTertiary: var(--colorOrange);
-    --colorPositive: var(--colorGreen);
-    --colorNegative: var(--colorRed);
+    --colorPrimary: var(--colorGold);
+    --colorSecondary: var(--colorGold);
+    --colorTertiary: var(--colorGold);
 
     /* Background Colors */
-    --colorBackground: var(--colorGrayLightest);
+    --colorBackground: white;
 
     /* Font Colors */
     --colorFont: var(--colorGray);
     --colorFontHeading: var(--colorGrayDark);
-    --colorFontAccent: var(--colorBlue);
 
     /* Link Colors */
-    --colorLink: var(--colorBlue);
+    --colorLink: var(--colorGold);
 }
 
 /***** Spacing Variables *****/
@@ -47,4 +36,5 @@
 /***** Typography Variables *****/
 :root {
   --fontSansSerif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --fontSerif:     Georgia, Times, "Times New Roman", serif;
 }

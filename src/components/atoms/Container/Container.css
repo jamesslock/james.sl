@@ -1,21 +1,33 @@
 .root {
   margin: auto;
-  padding: 0 5%;
+  padding: 0 5% 0 10%;
+}
+.root:before,
+.root:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.root:after {
+    clear: both;
 }
 
 /***** Container Sizes *****/
-.medium {
-  max-width: 960px;
-}
 .small {
-  max-width: 840px;
+  width: 60%;
 }
-.smallest {
-  max-width: 580px;
+.full {
+  width: 100%;
+  padding: 0 15px;
 }
 
 /***** Container Alignment *****/
 .left {
+  margin: 0;
+  padding: 0;
+}
+.right {
+  float: right;
   margin: 0;
   padding: 0;
 }

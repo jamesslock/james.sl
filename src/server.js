@@ -52,7 +52,7 @@ try {
 
                 ${styleTag}
               </head>
-              <body>
+              <body itemScope itemType="http://schema.org/WebPage">
                 <div id="react-root">${reactString}</div>
               </body>
             </html>`

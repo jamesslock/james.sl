@@ -2,6 +2,18 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	resize: vertical;
-	overflow: auto;
+}
+.smallCaps {
+  font-feature-settings: 'smcp', 'kern';
+  font-kerning: normal;
+  letter-spacing: 0.1rem;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
 }

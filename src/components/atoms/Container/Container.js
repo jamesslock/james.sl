@@ -46,5 +46,6 @@ Container.propTypes = {
   ]),
   align: PropTypes.oneOf([
 		'left',
+    'right',
 	]),
 };
