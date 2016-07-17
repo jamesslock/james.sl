@@ -1,5 +1,8 @@
 .aside {
-	float: left;
+	float: right;
 	width: 33%;
-	margin-right: 7%;
+	margin-left: 7%;
+}
+.flex {
+	display: flex;
 }
