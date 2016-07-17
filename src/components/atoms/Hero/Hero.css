@@ -1,6 +1,7 @@
 /***** Base Component *****/
 .root {
     position: relative;
+    min-height: 400px;
 }
 
 /***** Hero Sizes *****/

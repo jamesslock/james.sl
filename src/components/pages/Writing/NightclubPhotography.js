@@ -14,7 +14,7 @@ import AnimateSlideUp    from '../../atoms/Animate/AnimateSlideUp.js';
 import PostHeader from '../../organisms/PostHeader/PostHeader.js';
 
 // Import Styles
-import s from './Post.css';
+import s from './Writing.css';
 import {verticalCenter} from 'global/helpers.css';
 
 export default class Post extends Component {

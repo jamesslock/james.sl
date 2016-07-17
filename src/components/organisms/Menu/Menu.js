@@ -35,7 +35,7 @@ export default class Menu extends Component {
                   <Link to="/about" onClick={onLinkClick}>About</Link>
                 </div>
                 <div className={s.navItem}>
-                  <Link to="/post" onClick={onLinkClick}>Writing</Link>
+                  <Link to="/writing" onClick={onLinkClick}>Writing</Link>
                 </div>
                 <div className={s.navItem}>
                   <Link to="/contact" onClick={onLinkClick}>Contact</Link>
@@ -43,7 +43,7 @@ export default class Menu extends Component {
               </nav>
             </Container>
             <Container size="small" align="left">
-              <p>What I'm <Link to="/">Reading</Link> / <Link to="/">Watching</Link> / <Link to="/">Listening</Link></p>
+              <p>What I'm <Link to="/reading" onClick={onLinkClick}>Reading</Link> / <Link to="/watching" onClick={onLinkClick}>Watching</Link> / <Link to="/listening" onClick={onLinkClick}>Listening</Link></p>
             </Container>
           </Container>
         </Section>
