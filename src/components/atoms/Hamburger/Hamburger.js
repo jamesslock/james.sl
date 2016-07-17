@@ -42,11 +42,7 @@ export default class Hamburger extends Component {
 					className={[classNames, isActive].join(' ')}
 					onClick={ () => this.showMenu() }
 	      >
-					<div className={s.box}>
-	    			<div className={s.inner}>
-
-	       		</div>
-	    		</div>
+    			<div className={s.inner} />
 	      </button>
 
 				{ showMenu ?

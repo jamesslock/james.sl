@@ -10,18 +10,14 @@
   background-color: transparent;
   border: 0;
   margin: 0;
+  padding: 0;
   overflow: visible;
+  width: 40px;
+  height: 30px;
 
 	&:focus {
 		outline: 0;
 	}
-}
-
-.box {
-  width: 40px;
-  height: 24px;
-  display: inline-block;
-  position: relative;
 }
 
 .inner {
@@ -46,11 +42,11 @@
   display: block;
 }
 .inner::before {
-  top: -10px;
+  top: -13px;
 	transition: top 0.1s 0.34s ease-in, opacity 0.1s ease-in;
 }
 .inner::after {
-  bottom: -10px;
+  bottom: -13px;
 	transition: bottom 0.1s 0.34s ease-in,
 							-webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 	transition: bottom 0.1s 0.34s ease-in,

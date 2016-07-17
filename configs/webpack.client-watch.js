@@ -2,7 +2,7 @@ var webpack = require("webpack");
 var config = require("./webpack.client.js");
 var hostname = process.env.HOSTNAME || "localhost";
 var port     = 8080;
-const cssLoaderConfig = 'modules&importLoaders=1&localIdentName=[name]-[local]-[hash:base64:5]!postcss-loader';
+const cssLoaderConfig = 'modules&importLoaders=1&localIdentName=[hash:base64:5]!postcss-loader';
 
 config.cache   = true;
 config.debug   = true;

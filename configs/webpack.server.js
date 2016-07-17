@@ -2,7 +2,7 @@ const webpack = require("webpack");
 const path = require("path");
 const fs = require('fs');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const cssLoaderConfig = 'modules&importLoaders=1&localIdentName=[name]-[local]-[hash:base64:5]!postcss';
+const cssLoaderConfig = 'modules&importLoaders=1&localIdentName=[hash:base64:5]!postcss';
 const webpackPostcssTools = require('webpack-postcss-tools');
 const map = webpackPostcssTools.makeVarMap('src/global/main.css');
 
@@ -72,7 +72,7 @@ module.exports = {
     }),
 
     require('postcss-calc')(),
-		
+
 		require('postcss-responsive-type')(),
 
 		require('postcss-color-function')()

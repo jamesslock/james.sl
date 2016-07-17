@@ -16,7 +16,7 @@ export default class Nav extends Component {
     return (
       <header className={s.root}>
         <Container size="full">
-          <Link className={s.home} to="/">James.SL</Link>
+          <Link className={s.home} to="/">JSL</Link>
           <Hamburger className={s.menu} />
         </Container>
       </header>
