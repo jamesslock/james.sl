@@ -4,6 +4,9 @@ import {Link} from 'react-router';
 // Import Atom Components
 import Container       from '../../atoms/Container/Container.js';
 import Section       from '../../atoms/Section/Section.js';
+import AnimateFadeInFast    from '../../atoms/Animate/AnimateFadeInFast.js';
+import AnimateFadeIn    from '../../atoms/Animate/AnimateFadeIn.js';
+import AnimateSlideRight    from '../../atoms/Animate/AnimateSlideRight.js';
 
 import s from './Menu.css';
 import {verticalCenter} from 'global/helpers.css';
@@ -23,31 +26,37 @@ export default class Menu extends Component {
     ].join(' ');
 
     return (
-      <div className={[classNames, verticalCenter].join(' ')}>
-        <Section>
-          <Container>
-            <Container size="small" align="left">
-              <nav className={s.nav} role="navigation">
-                <div className={s.navItem}>
-                  <Link to="/" onClick={onLinkClick}>Home</Link>
-                </div>
-                <div className={s.navItem}>
-                  <Link to="/about" onClick={onLinkClick}>About</Link>
-                </div>
-                <div className={s.navItem}>
-                  <Link to="/writing" onClick={onLinkClick}>Writing</Link>
-                </div>
-                <div className={s.navItem}>
-                  <Link to="/contact" onClick={onLinkClick}>Contact</Link>
-                </div>
-              </nav>
+      <AnimateFadeInFast>
+        <div className={[classNames, verticalCenter].join(' ')}>
+          <Section>
+            <Container>
+              <Container size="small" align="left">
+                <AnimateSlideRight>
+                  <nav className={s.nav} role="navigation">
+                    <div className={s.navItem}>
+                      <Link to="/" onClick={onLinkClick}>Home</Link>
+                    </div>
+                    <div className={s.navItem}>
+                      <Link to="/about" onClick={onLinkClick}>About</Link>
+                    </div>
+                    <div className={s.navItem}>
+                      <Link to="/writing" onClick={onLinkClick}>Writing</Link>
+                    </div>
+                    <div className={s.navItem}>
+                      <Link to="/contact" onClick={onLinkClick}>Contact</Link>
+                    </div>
+                  </nav>
+                </AnimateSlideRight>
+              </Container>
+              <Container size="small" align="left">
+                <AnimateFadeIn>
+                  <p>What I'm <Link to="/reading" onClick={onLinkClick}>Reading</Link> / <Link to="/watching" onClick={onLinkClick}>Watching</Link> / <Link to="/listening" onClick={onLinkClick}>Listening</Link></p>
+                </AnimateFadeIn>
+              </Container>
             </Container>
-            <Container size="small" align="left">
-              <p>What I'm <Link to="/reading" onClick={onLinkClick}>Reading</Link> / <Link to="/watching" onClick={onLinkClick}>Watching</Link> / <Link to="/listening" onClick={onLinkClick}>Listening</Link></p>
-            </Container>
-          </Container>
-        </Section>
-      </div>
+          </Section>
+        </div>
+      </AnimateFadeInFast>
     );
   }
 }

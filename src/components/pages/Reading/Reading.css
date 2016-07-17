@@ -1,0 +1,9 @@
+.titleLarge {
+  letter-spacing: -0.1rem;
+	line-height: 0.95;
+	font-weight: 600;
+  margin: 10rem 0 4rem 0;
+
+	font-size: responsive 42px 80px;
+  font-range: 520px 1440px;
+}

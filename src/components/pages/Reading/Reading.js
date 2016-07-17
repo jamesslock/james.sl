@@ -5,6 +5,8 @@ import { Link } from 'react-router';
 import Section    from '../../atoms/Section/Section.js';
 import Container  from '../../atoms/Container/Container.js';
 import Hero       from '../../atoms/Hero/Hero.js';
+import AnimateSlideUp    from '../../atoms/Animate/AnimateSlideUp.js';
+import AnimateSlideRight    from '../../atoms/Animate/AnimateSlideRight.js';
 
 // Import Molecules Components
 import ContentList       from '../../molecules/ContentList/ContentList.js';
@@ -14,6 +16,7 @@ import ContentListItem       from '../../molecules/ContentList/ContentListItem.j
 
 // Import Styles
 import s from './Reading.css';
+import {verticalCenter} from 'global/helpers.css';
 
 export default class Reading extends Component {
 
@@ -24,22 +27,26 @@ export default class Reading extends Component {
   render() {
     return(
       <div>
-        <Hero>
-          <Section size="large">
-            <Container>
-							<h1>Reading</h1>
-						</Container>
-          </Section>
-        </Hero>
+      <Hero className={verticalCenter}>
+        <Section size="large">
+          <Container>
+            <AnimateSlideRight>
+              <h1 className={s.titleLarge}>Reading</h1>
+            </AnimateSlideRight>
+          </Container>
+        </Section>
+      </Hero>
 				<Section>
     			<Container>
-            <ContentList>
-              <ContentListItem
-                title="Feuchtgebiete"
-                link="/"
-                description="Nach einer missglückten Intimrasur liegt die 18-jährige Helen auf der Inneren Abteilung von Maria Hilf. Dort widmet sie sich jenen Bereichen ihres Körpers, die gewöhnlich als unmädchenhaft gelten."
-              />
-            </ContentList>
+            <AnimateSlideUp>
+              <ContentList>
+                <ContentListItem
+                  title="Feuchtgebiete"
+                  link="/"
+                  description="Nach einer missglückten Intimrasur liegt die 18-jährige Helen auf der Inneren Abteilung von Maria Hilf. Dort widmet sie sich jenen Bereichen ihres Körpers, die gewöhnlich als unmädchenhaft gelten."
+                />
+              </ContentList>
+            </AnimateSlideUp>
        		</Container>
     		</Section>
       </div>
