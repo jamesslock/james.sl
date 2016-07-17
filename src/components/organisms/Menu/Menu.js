@@ -32,13 +32,13 @@ export default class Menu extends Component {
                   <Link to="/" onClick={onLinkClick}>Home</Link>
                 </div>
                 <div className={s.navItem}>
-                  <Link to="/post" onClick={onLinkClick}>About</Link>
+                  <Link to="/about" onClick={onLinkClick}>About</Link>
                 </div>
                 <div className={s.navItem}>
-                  <Link to="/" onClick={onLinkClick}>Writing</Link>
+                  <Link to="/post" onClick={onLinkClick}>Writing</Link>
                 </div>
                 <div className={s.navItem}>
-                  <Link to="/post" onClick={onLinkClick}>Contact</Link>
+                  <Link to="/contact" onClick={onLinkClick}>Contact</Link>
                 </div>
               </nav>
             </Container>
