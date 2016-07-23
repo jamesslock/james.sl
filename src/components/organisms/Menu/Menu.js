@@ -37,20 +37,14 @@ export default class Menu extends Component {
                       <Link to="/" onClick={onLinkClick}>Home</Link>
                     </div>
                     <div className={s.navItem}>
-                      <Link to="/about" onClick={onLinkClick}>About</Link>
-                    </div>
-                    <div className={s.navItem}>
                       <Link to="/writing" onClick={onLinkClick}>Writing</Link>
-                    </div>
-                    <div className={s.navItem}>
-                      <Link to="/contact" onClick={onLinkClick}>Contact</Link>
                     </div>
                   </nav>
                 </AnimateSlideRight>
               </Container>
               <Container size="small" align="left">
                 <AnimateFadeIn>
-                  <p>What I'm <Link to="/reading" onClick={onLinkClick}>Reading</Link> / <Link to="/watching" onClick={onLinkClick}>Watching</Link> / <Link to="/listening" onClick={onLinkClick}>Listening</Link></p>
+                  <p>What I'm <Link to="/reading" onClick={onLinkClick}>Reading</Link></p>
                 </AnimateFadeIn>
               </Container>
             </Container>
