@@ -32,3 +32,22 @@ p, ul {
 h1, h2, h3, h4, h5 {
   font-family: var(--fontSansSerif);
 }
+code {
+  padding: 5px 10px;
+  display: inline-block;
+  max-width: 100%;
+  font-family: monospace, sans-serif;
+  font-size: 0.85em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border: var(--colorGoldLight) 1px solid;
+  background: var(--colorGoldLightest);
+  font-feature-settings: "liga" 0;
+}
+
+blockquote p {
+  font-style: italic;
+  color: var(--colorGold);
+  font-size: responsive 18px 28px;
+  font-range: 520px 1440px;
+}

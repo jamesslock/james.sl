@@ -1,0 +1,18 @@
+.heroTitle {
+	letter-spacing: -0.1rem;
+	line-height: 0.95;
+	font-weight: 600;
+  margin: 10rem 0 4rem 0;
+
+	font-size: responsive 42px 120px;
+  font-range: 520px 1440px;
+}
+.heroIntro {
+	max-width: 680px;
+	margin: 0;
+	line-height: 1.6;
+	font-size: responsive 16px 20px;
+  font-range: 600px 1440px;
+	color:#666;
+	position: relative;
+}

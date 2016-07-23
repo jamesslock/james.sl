@@ -17,7 +17,7 @@ import PostHeader from '../../organisms/PostHeader/PostHeader.js';
 import s from './Writing.css';
 import {verticalCenter} from 'global/helpers.css';
 
-export default class Post extends Component {
+export default class NomadBackpack extends Component {
 
   componentDidMount() {
     document.body.scrollTop = 0; // Tells react to reset scroll position when changing pages.
