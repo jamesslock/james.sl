@@ -16,7 +16,6 @@ import ContentListItem       from '../../molecules/ContentList/ContentListItem.j
 
 // Import Styles
 import s from './Writing.css';
-import {verticalCenter} from 'global/helpers.css';
 
 export default class Writing extends Component {
 
@@ -27,15 +26,10 @@ export default class Writing extends Component {
   render() {
     return(
       <div>
-        <Hero className={verticalCenter}>
-          <Section size="large">
-            <Container>
-							<AnimateSlideRight>
-                <h1 className={s.titleLarge}>Writing</h1>
-              </AnimateSlideRight>
-						</Container>
-          </Section>
-        </Hero>
+        <Hero
+          title="Writing"
+        />
+
 				<Section>
     			<Container>
             <AnimateSlideUp>

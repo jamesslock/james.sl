@@ -27,15 +27,9 @@ export default class Reading extends Component {
   render() {
     return(
       <div>
-      <Hero className={verticalCenter}>
-        <Section size="large">
-          <Container>
-            <AnimateSlideRight>
-              <h1 className={s.titleLarge}>Reading</h1>
-            </AnimateSlideRight>
-          </Container>
-        </Section>
-      </Hero>
+        <Hero
+          title="Reading"
+        />
 				<Section>
     			<Container>
             <AnimateSlideUp>

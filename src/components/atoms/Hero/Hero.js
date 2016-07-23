@@ -1,5 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 
+// Import Atom Components
+import Section    from '../../atoms/Section/Section.js';
+import Container  from '../../atoms/Container/Container.js';
+import AnimateFadeIn    from '../../atoms/Animate/AnimateFadeIn.js';
+import AnimateSlideRight    from '../../atoms/Animate/AnimateSlideRight.js';
+
 import s from './Hero.css';
 
 export default class Hero extends Component {
@@ -8,6 +14,7 @@ export default class Hero extends Component {
     const {
       className,
       children,
+      title,
       size,
       ...remainingProps,
     } = this.props;
@@ -26,9 +33,27 @@ export default class Hero extends Component {
         className={classNames}
         {...remainingProps}
       >
-        {children}
+        <Section size="large">
+          <Container>
+            <AnimateSlideRight>
+              { title ?
+                  <h1 className={s.title}>{title}</h1>
+                :
+                  null
+              }
+            </AnimateSlideRight>
+            { children ?
+              <AnimateFadeIn>
+                <div className={s.intro}>
+                  {children}
+                </div>
+              </AnimateFadeIn>
+            :
+              null
+            }
+          </Container>
+        </Section>
       </div>
-
     )}
 };
 

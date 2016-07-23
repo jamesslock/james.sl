@@ -2,9 +2,34 @@
 .root {
     position: relative;
     min-height: 400px;
+    display: flex;
+  	flex-direction: column;
+  	justify-content: center;
 }
 
 /***** Hero Sizes *****/
 .full {
   min-height: 100vh;
+}
+
+
+.title {
+	letter-spacing: -0.1rem;
+	line-height: 0.95;
+	font-weight: 600;
+  margin: 10rem 0 4rem 0;
+
+	font-size: responsive 42px 120px;
+  font-range: 520px 1440px;
+}
+.intro {
+	max-width: 680px;
+	position: relative;
+}
+.intro p {
+  margin: 0;
+	line-height: 1.6;
+	font-size: responsive 16px 20px;
+  font-range: 600px 1440px;
+	color:#666;
 }
