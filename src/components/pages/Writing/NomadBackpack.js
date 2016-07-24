@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import { Link } from 'react-router';
 
 // Import Atom Components
+import Image    from '../../atoms/Image/Image.js';
 import Section    from '../../atoms/Section/Section.js';
 import Container  from '../../atoms/Container/Container.js';
 
@@ -42,7 +43,16 @@ export default class NomadBackpack extends Component {
   			</Section>
   			<Section>
   				<Container align="right" size="small">
-  					<img src="/img/whats-in-my-backpack.jpg" alt="" className={s.imageRight}/>
+
+            <Image
+              src="/img/whats-in-my-backpack.jpg"
+              alt=""
+              caption="Everything my backpack contains."
+              width="1400"
+              height="934"
+              className={s.imageRight}
+            />
+
   					<h2 id="sowhatdoicarry">So what do I carry?</h2>
 
   					<h3 id="backpack">Backpack</h3>
@@ -116,7 +126,12 @@ export default class NomadBackpack extends Component {
   			</Section>
   			<Section>
   				<Container size="small" align="right">
-     				<img src="/img/stockholm-old-town-photoshoot-12.jpg" alt=""/>
+            <Image
+              src="/img/stockholm-old-town-photoshoot-12.jpg"
+              alt=""
+              width="640"
+              height="960"
+            />
      			</Container>
   				<div className={s.aside}>
   					<p>It’s worth mentioning that I’m obviously wearing some of the clothes in the list above (I tend not to walk around naked y'know) during flights I’ll also wear the heavier items (jeans, jacket, trainers) since they are the biggest to pack.</p>

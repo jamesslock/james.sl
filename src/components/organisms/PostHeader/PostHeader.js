@@ -1,9 +1,11 @@
 import React, { Component, PropTypes } from 'react';
+import LazyLoad from 'react-lazy-load';
 
 import s from './PostHeader.css';
 import {verticalCenter} from 'global/helpers.css';
 
 // Import Atom Components
+import Image    from '../../atoms/Image/Image.js';
 import AnimateSlideRight    from '../../atoms/Animate/AnimateSlideRight.js';
 import AnimateFadeIn    from '../../atoms/Animate/AnimateFadeIn.js';
 
@@ -53,9 +55,13 @@ export default class PostHeader extends Component {
           </div>
         </div>
         <div className={s.imageAside}>
-          <AnimateFadeIn className={s.imageBackground}>
-            <img className={s.image} src={image} alt={title}/>
-          </AnimateFadeIn>
+
+            <LazyLoad offsetTop={0}>
+              <AnimateFadeIn className={s.imageBackground}>
+                <img className={s.image} src={image} alt={title}/>
+              </AnimateFadeIn>
+            </LazyLoad>
+
         </div>
       </header>
 

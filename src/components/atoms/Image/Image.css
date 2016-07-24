@@ -1,0 +1,50 @@
+.root {
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.caption {
+	border-bottom: 1px solid var(--colorGoldLightest);
+	font-size: 14px;
+	padding: 5px 0;
+	font-family: var(--fontSansSerif);
+}
+.aspectRatio {
+	position: relative;
+  width: 100%;
+	background-color: var(--colorGoldLightest);
+	overflow: hidden;
+}
+.picture {
+	position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -50%;
+	margin-top: -50%;
+  width: 100%;
+	padding-bottom: 100%;
+  height: 0;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 100%;
+  animation: sk-scaleout 3.0s infinite ease-in-out;
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
