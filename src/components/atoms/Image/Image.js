@@ -15,6 +15,7 @@ export default class Hero extends Component {
 			src,
 			alt,
 			width,
+			layout,
 			height,
 			caption,
       ...remainingProps,
@@ -23,6 +24,7 @@ export default class Hero extends Component {
     const classNames = [
       s.root,
       s ? s[s] : null,
+			layout ? s[layout] : null,
       className,
     ].join(' ');
 
@@ -38,7 +40,7 @@ export default class Hero extends Component {
 				<div className={s.aspectRatio} style={aspectStyle}>
 					<div className={s.spinner}/>
 					<picture className={s.picture}>
-						<LazyLoad>
+						<LazyLoad offset="500">
 							<AnimateFadeIn>
 			     			<img src={src} alt={alt} width={width} height={height}/>
 							</AnimateFadeIn>
@@ -58,4 +60,7 @@ export default class Hero extends Component {
 Hero.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
+	size: PropTypes.oneOf([
+    'left',
+  ]),
 };

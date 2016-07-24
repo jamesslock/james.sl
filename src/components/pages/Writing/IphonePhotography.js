@@ -27,6 +27,8 @@ export default class IphonePhotography extends Component {
         publishedTime="2013-09-04T12:00:00+02:00"
         modifiedTime="2013-09-04T12:00:00+02:00"
         image="/img/iphone-only-polish-tatras.jpg"
+        imageWidth="1400"
+        imageHeight="934"
         description="They say the best camera is the one you have with you, in today’s age it’s very rare to be without your smartphone, I know I feel naked without mine and I rely on it more than any other object in my life."
         url="getting-back-into-iphone-photography"
       >

@@ -26,7 +26,9 @@ export default class TravelWorld extends Component {
         date="June 2014"
         publishedTime="2013-09-04T12:00:00+02:00"
         modifiedTime="2013-09-04T12:00:00+02:00"
-        image="img/walking-in-malmo.jpg"
+        image="/img/walking-in-malmo.jpg"
+        imageWidth="1400"
+        imageHeight="934"
         description="It’s now been 6 months since I sold everything in the UK and left to travel the world, and so far it has been the most enjoyable and enlightening experience of my life."
         url="six-months-since-i-sold-everything-and-left-to-travel-the-world"
       >

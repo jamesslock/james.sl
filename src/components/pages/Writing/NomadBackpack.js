@@ -28,6 +28,8 @@ export default class NomadBackpack extends Component {
         publishedTime="2013-09-04T12:00:00+02:00"
         modifiedTime="2013-09-04T12:00:00+02:00"
         image="/img/stockholm-old-town-photoshoot-9.jpg"
+        imageWidth="1400"
+        imageHeight="934"
         description="I’ve found that you really don’t need that much stuff to live and travel as a digital nomad."
         url="my-minimalist-digital-nomad-backpack"
       >
@@ -50,7 +52,7 @@ export default class NomadBackpack extends Component {
               caption="Everything my backpack contains."
               width="1400"
               height="934"
-              className={s.imageRight}
+              layout="left"
             />
 
   					<h2 id="sowhatdoicarry">So what do I carry?</h2>

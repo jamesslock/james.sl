@@ -27,6 +27,8 @@ export default class HacktostartPodcast extends Component {
         publishedTime="2013-09-04T12:00:00+02:00"
         modifiedTime="2013-09-04T12:00:00+02:00"
         image="/img/hacktostart-1.png"
+        imageWidth="730"
+        imageHeight="236"
         description="James joins us to share how he learned to code, why he likes working with startups, and how he manages it all while travelling."
         url="hack-to-start-podcast-interview"
       >

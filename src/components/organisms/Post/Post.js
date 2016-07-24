@@ -21,6 +21,8 @@ export default class Post extends Component {
       title,
 			description,
       image,
+      imageWidth,
+      imageHeight,
 			url,
       date,
       publishedTime,
@@ -67,6 +69,8 @@ export default class Post extends Component {
 						date={date}
 						publishedTime={publishedTime}
 						image={image}
+            imageHeight={imageHeight}
+            imageWidth={imageWidth}
 					/>
 				</Container>
 				<Container>

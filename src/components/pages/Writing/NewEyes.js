@@ -27,6 +27,8 @@ export default class NewEyes extends Component {
         publishedTime="2013-09-04T12:00:00+02:00"
         modifiedTime="2013-09-04T12:00:00+02:00"
         image="/img/an-old-country-with-new-eyes.jpg"
+        imageWidth="1400"
+        imageHeight="934"
         description="Travel is uniquely remarkable because it forces you out of your comfort zone, plunges you deep into the unknown, new experiences and new people."
         url="an-old-country-with-new-eyes"
       >

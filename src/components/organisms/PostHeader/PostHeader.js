@@ -17,6 +17,8 @@ export default class PostHeader extends Component {
       children,
       title,
       image,
+      imageHeight,
+      imageWidth,
       date,
       publishedTime,
       ...remainingProps,
@@ -55,13 +57,12 @@ export default class PostHeader extends Component {
           </div>
         </div>
         <div className={s.imageAside}>
-
-            <LazyLoad offsetTop={0}>
-              <AnimateFadeIn className={s.imageBackground}>
-                <img className={s.image} src={image} alt={title}/>
-              </AnimateFadeIn>
-            </LazyLoad>
-
+          <Image
+            src={image}
+            alt={title}
+            width={imageWidth}
+            height={imageHeight}
+        />
         </div>
       </header>
 

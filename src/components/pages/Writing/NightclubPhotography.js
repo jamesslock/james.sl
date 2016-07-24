@@ -27,6 +27,8 @@ export default class NightclubPhotography extends Component {
         publishedTime="2013-09-04T12:00:00+02:00"
         modifiedTime="2013-09-04T12:00:00+02:00"
         image="/img/nightclub-photography-53.jpg"
+        imageWidth="1400"
+        imageHeight="934"
         description="A new nightclub was opening locally and needed a photographer to shoot at the opening event. Having never done nightclub photography before, and with only a little experience shooting events for friends, conferences, and startup launches, I was unsure about jumping in at the deep end."
         url="a-foray-into-nightclub-photography"
       >

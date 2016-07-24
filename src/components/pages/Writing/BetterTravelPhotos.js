@@ -27,6 +27,8 @@ export default class BetterTravelPhotos extends Component {
         publishedTime="2013-09-04T12:00:00+02:00"
         modifiedTime="2013-09-04T12:00:00+02:00"
         image="/img/morskie-oko-9.jpg"
+        imageWidth="1400"
+        imageHeight="934"
         description="I have traveled to 14 countries so far, mostly Europe, but also Egypt, America and the Philippines. As a nomad photographer I have learnt the majority of my skills while on the move."
         url="how-to-take-better-travel-photography-photos"
       >

@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import { Link } from 'react-router';
+import Image    from '../../atoms/Image/Image.js';
 
 // Import Atom Components
 import Section    from '../../atoms/Section/Section.js';
@@ -31,9 +32,11 @@ export default class About extends Component {
 
       <Section size="large">
         <Container>
-          <AnimateSlideUp>
-            <img src="/img/one-bag-nomad-30.jpg"/>
-          </AnimateSlideUp>
+          <Image
+            src="/img/one-bag-nomad-30.jpg"
+            width="1400"
+            height="934"
+          />
         </Container>
       </Section>
       </div>

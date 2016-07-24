@@ -1,9 +1,22 @@
 .root {
+	width: 100%;
+	margin: 0;
+
 	img {
 		width: 100%;
 		height: auto;
 	}
 }
+
+.left {
+	float: left;
+	width: 100%;
+	margin-left: -67%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+	margin-top: 1%;
+}
+
 .caption {
 	border-bottom: 1px solid var(--colorGoldLightest);
 	font-size: 14px;

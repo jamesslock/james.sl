@@ -27,6 +27,8 @@ export default class BypassWifi extends Component {
         publishedTime="2013-09-04T12:00:00+02:00"
         modifiedTime="2013-09-04T12:00:00+02:00"
         image="/img/bypasswifi.jpg"
+        imageWidth="1400"
+        imageHeight="934"
         description="If you’re like me and spend a lot of time in airports or hotels, 30 minutes per day restrictions on free wifi is the bane of your existence."
         url="bypass-wifi-time-limit-restrictions"
       >
