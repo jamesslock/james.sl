@@ -60,9 +60,6 @@ export default class Post extends Component {
 					link={[
 						{"rel": "canonical", "href": `http://james.sl/writing/${url}`}
 					]}
-					script={[
-            {"type": "application/ld+json", innerHTML: `{ "@context": "http://schema.org" }`}
-          ]}
 				/>
         <Container>
 					<PostHeader

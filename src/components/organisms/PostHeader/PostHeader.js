@@ -37,7 +37,6 @@ export default class PostHeader extends Component {
           <div className={verticalCenter}>
             <AnimateFadeIn>
               <time className={s.time}
-                    pubDate
                     itemProp="datePublished"
                     dateTime={publishedTime}
                 >
