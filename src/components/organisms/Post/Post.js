@@ -4,14 +4,11 @@ import Helmet from "react-helmet";
 // Import Atom Components
 import Section    from '../../atoms/Section/Section.js';
 import Container  from '../../atoms/Container/Container.js';
-import AnimateSlideUp    from '../../atoms/Animate/AnimateSlideUp.js';
-import AnimateSlideRight    from '../../atoms/Animate/AnimateSlideRight.js';
-import AnimateFadeIn    from '../../atoms/Animate/AnimateFadeIn.js';
 
 // Import Molecules Components
 
 // Import Organisms Components
-import PostHeader from '../../organisms/PostHeader/PostHeader.js';
+import PostHeader from '../PostHeader/PostHeader.js';
 
 import s from './Post.css';
 

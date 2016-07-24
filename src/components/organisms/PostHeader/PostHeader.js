@@ -4,7 +4,6 @@ import s from './PostHeader.css';
 import {verticalCenter} from 'global/helpers.css';
 
 // Import Atom Components
-import AnimateSlideUp    from '../../atoms/Animate/AnimateSlideUp.js';
 import AnimateSlideRight    from '../../atoms/Animate/AnimateSlideRight.js';
 import AnimateFadeIn    from '../../atoms/Animate/AnimateFadeIn.js';
 
