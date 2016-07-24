@@ -3,7 +3,7 @@
 * application and site.
 **/
 import React from "react";
-import {Router, Route, IndexRoute, Redirect} from "react-router";
+import {Router, Route, IndexRoute} from "react-router";
 
 // Container
 import Container from "./Container";
@@ -23,14 +23,14 @@ import IphonePhotography from 'components/pages/Writing/IphonePhotography';
 import BetterTravelPhotos from 'components/pages/Writing/BetterTravelPhotos';
 import NewEyes from 'components/pages/Writing/NewEyes';
 import TravelWorld from 'components/pages/Writing/TravelWorld';
-import NightclubPhotography from 'components/pages/Writing/NightclubPhotography.js';
+import NightclubPhotography from 'components/pages/Writing/NightclubPhotography';
 
 module.exports = (
 	<Router>
 		<Route path="/" component={Container}>
 			<IndexRoute component={Home} />
 			<Route path="about" component={About} />
-			<Route path="reading" component={Reading} /	>
+			<Route path="reading" component={Reading} />
 
 
 			<Route path="writing">
