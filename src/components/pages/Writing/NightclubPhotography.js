@@ -17,7 +17,7 @@ import PostHeader from '../../organisms/PostHeader/PostHeader.js';
 import s from './Writing.css';
 import {verticalCenter} from 'global/helpers.css';
 
-export default class Post extends Component {
+export default class NightclubPhotography extends Component {
 
   componentDidMount() {
     document.body.scrollTop = 0; // Tells react to reset scroll position when changing pages.
@@ -30,7 +30,7 @@ export default class Post extends Component {
 					<PostHeader
 						title="A foray into nightclub photography"
 						date="April 2013"
-						dateTime="2013-09-04T12:00:00+02:00"
+						publishedTime="2013-09-04T12:00:00+02:00"
 						image="/img/nightclub-photography-53.jpg"/>
 				</Container>
 				<Container>

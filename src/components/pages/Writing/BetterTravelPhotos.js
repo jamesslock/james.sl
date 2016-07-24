@@ -30,7 +30,7 @@ export default class BetterTravelPhotos extends Component {
 					<PostHeader
 						title="A guide to taking better travel photography photos"
 						date="August 2014"
-						dateTime="2013-09-04T12:00:00+02:00"
+						publishedTime="2013-09-04T12:00:00+02:00"
 						image="/img/morskie-oko-9.jpg"/>
 				</Container>
 				<Container>

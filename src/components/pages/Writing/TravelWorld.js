@@ -30,7 +30,7 @@ export default class Post extends Component {
 					<PostHeader
 						title="Six months since I sold everything and left to travel the world"
 						date="June 2014"
-						dateTime="2013-09-04T12:00:00+02:00"
+						publishedTime="2013-09-04T12:00:00+02:00"
 						image="/img/walking-in-malmo.jpg"/>
 				</Container>
 				<Container>

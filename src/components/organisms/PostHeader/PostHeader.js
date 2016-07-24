@@ -17,7 +17,7 @@ export default class PostHeader extends Component {
       title,
       image,
       date,
-      dateTime,
+      publishedTime,
       ...remainingProps,
     } = this.props;
 
@@ -40,7 +40,7 @@ export default class PostHeader extends Component {
               <time className={s.time}
                     pubDate
                     itemProp="datePublished"
-                    dateTime={dateTime}
+                    dateTime={publishedTime}
                 >
                 {date}
               </time>

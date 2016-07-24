@@ -30,7 +30,7 @@ export default class NewEyes extends Component {
 					<PostHeader
 						title="An old country with new eyes"
 						date="July 2014"
-						dateTime="2013-09-04T12:00:00+02:00"
+						publishedTime="2013-09-04T12:00:00+02:00"
 						image="/img/an-old-country-with-new-eyes.jpg"/>
 				</Container>
 				<Container>

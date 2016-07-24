@@ -30,7 +30,7 @@ export default class HacktostartPodcast extends Component {
 					<PostHeader
 						title="Hack to Start podcast interview"
 						date="December 2014"
-						dateTime="2013-09-04T12:00:00+02:00"
+						publishedTime="2013-09-04T12:00:00+02:00"
 						image="/img/hacktostart-1.png"/>
 				</Container>
 				<Container>
@@ -53,7 +53,7 @@ export default class HacktostartPodcast extends Component {
                 <li>And more!</li>
                 </ul>
 
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/182692158&amp;color=00aabb"></iframe>
+                <iframe width="100%" height="166" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/182692158&amp;color=00aabb"></iframe>
 
                 <h2 id="someofthequestionstheyasked">Some of the questions they asked</h2>
 
