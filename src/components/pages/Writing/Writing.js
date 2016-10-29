@@ -69,10 +69,20 @@ export default class Writing extends Component {
                   description="I thought I’d take this milestone opportunity to reflect on what I’ve learned so far, what I’ve enjoyed the most, what I wish I’d done differently and to share what I plan on doing next."
                   link="/writing/six-months-since-i-sold-everything-and-left-to-travel-the-world"
                 />
-                <ContentListItem
+								<ContentListItem
                   title="A foray into nightclub photography"
                   description="I’ve found that you really don’t need that much stuff to live and travel as a digital nomad. While planning the transition I was looking online for ‘the best travel x’ or ‘the top 10 must-have travel items’, and what I’ve learnt is that it’s bullshit."
                   link="/writing/a-foray-into-nightclub-photography"
+                />
+								<ContentListItem
+                  title="The start of something more"
+                  description="Back in December 2010 I received a tweet-enquiry from a talented designer, looking to rebrand his company. David ran a print design studio called Milk Design and was rebranding it to Simple as Milk, for which he needed a new website."
+                  link="/writing/the-start-of-something-more"
+                />
+								<ContentListItem
+                  title="Always told I would fail"
+                  description="One of my earliest memories is of a kick-ass Action Man. This Action Man was the tits, seriously. He came with the most awesome guns ever and cost at least three times as much as the other action men on the shelf. I was about 5 or 6 at the time and directly under the desire to be him, I just had to own him."
+                  link="/writing/always-told-i-would-fail"
                 />
             	</ContentList>
             </AnimateSlideUp>

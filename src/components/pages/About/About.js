@@ -27,8 +27,22 @@ export default class About extends Component {
     return(
       <div>
       <Hero size="large" title="About">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </Hero>
+				<p>
+					I'm a data driven, and usability-focused engineer with ten years working in UI/UX & front-end development. In 2013 I sold everything I owned and left to travel the world, working remotely, learning from new cultures and living a minimalistic life and now living in New York City.
+				</p>
+				<p>
+					Front-end developer & user experience engineer at Unroll.Me
+				</p>
+				<p>
+					Co-founder & Managing Director of design/UX studio Simple as Milk which works with single person startups, YC Alumni, and VC-backed startups, right through to Fortune 500 enterprises.
+				</p>
+				<p>
+					I'm a keen public speaker, speaking at a variety of conferences such as Hybrid Conf & providing input in design panels.
+				</p>
+				<p>
+					Passionate about open source & charity work, currently contributing to Ghost.org & helping out as the technical lead at the fantastic charity The School Fund.
+				</p>
+			</Hero>
 
       <Section size="large">
         <Container>

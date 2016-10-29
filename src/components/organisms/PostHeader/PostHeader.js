@@ -32,7 +32,6 @@ export default class PostHeader extends Component {
 
 
     return (
-
       <header
         className={classNames}
         {...remainingProps}
@@ -57,12 +56,15 @@ export default class PostHeader extends Component {
           </div>
         </div>
         <div className={s.imageAside}>
-          <Image
-            src={image}
-            alt={title}
-            width={imageWidth}
-            height={imageHeight}
-        />
+          { image ?
+            <Image
+              src={image}
+              alt={title}
+              width={imageWidth}
+              height={imageHeight}
+            />
+          : null }
+
         </div>
       </header>
 

@@ -38,7 +38,7 @@ export default class Home extends Component {
           size="full"
           title={["James ", <br/>, "Seymour-Lock"]}
         >
-          <p>Managing director of <a href="http://simpleasmilk.com" target="_blank" rel="noopener">Simple as Milk</a> and user experience engineer at <a href="https://unroll.me" target="_blank" rel="noopener">Unroll.Me</a>.</p>
+          <p>Managing partner of <a href="http://simpleasmilk.com" target="_blank" rel="noopener">Simple as Milk</a>, lead experience engineer at <a href="https://unroll.me" target="_blank" rel="noopener">Unroll.Me</a> & adviser for <a href="https://theschoolfund.org" target="_blank" rel="noopener">The School Fund</a>.</p>
         </Hero>
       </div>
     )

@@ -39,9 +39,13 @@ export default class Menu extends Component {
                     <div className={s.navItem}>
                       <Link to="/about" onClick={onLinkClick}>About</Link>
                     </div>
+										{/*
+                    <div className={s.navItem}>
+                      <Link to="/work" onClick={onLinkClick}>Work</Link>
+                    </div>
                     <div className={s.navItem}>
                       <Link to="/writing" onClick={onLinkClick}>Writing</Link>
-                    </div>
+                    </div>*/}
                   </nav>
                 </AnimateSlideRight>
               </Container>

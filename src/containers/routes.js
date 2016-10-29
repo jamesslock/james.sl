@@ -11,6 +11,7 @@ import Container from "./Container";
 // Pages
 import Home from 'components/pages/Home/Home';
 import About from 'components/pages/About/About';
+import Work from 'components/pages/Work/Work';
 import Writing from 'components/pages/Writing/Writing';
 import Reading from 'components/pages/Reading/Reading';
 import NotFound from 'components/pages/NotFound/NotFound';
@@ -24,12 +25,15 @@ import BetterTravelPhotos from 'components/pages/Writing/BetterTravelPhotos';
 import NewEyes from 'components/pages/Writing/NewEyes';
 import TravelWorld from 'components/pages/Writing/TravelWorld';
 import NightclubPhotography from 'components/pages/Writing/NightclubPhotography';
+import StartOfSomethingMore from 'components/pages/Writing/StartOfSomethingMore';
+import ToldIWouldFail from 'components/pages/Writing/ToldIWouldFail';
 
 module.exports = (
 	<Router>
 		<Route path="/" component={Container}>
 			<IndexRoute component={Home} />
 			<Route path="about" component={About} />
+			<Route path="work" component={Work} />
 			<Route path="reading" component={Reading} />
 
 
@@ -43,6 +47,8 @@ module.exports = (
 				<Route path="an-old-country-with-new-eyes" component={NewEyes} />
 				<Route path="six-months-since-i-sold-everything-and-left-to-travel-the-world" component={TravelWorld} />
 				<Route path="a-foray-into-nightclub-photography" component={NightclubPhotography} />
+				<Route path="the-start-of-something-more" component={StartOfSomethingMore} />
+				<Route path="always-told-i-would-fail" component={ToldIWouldFail} />
 			</Route>
 
 			<Route path='404' component={NotFound} />

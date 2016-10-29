@@ -31,5 +31,9 @@
 	line-height: 1.6;
 	font-size: responsive 16px 20px;
   font-range: 600px 1440px;
+	margin-bottom: 1em;
 	color:#666;
+}
+.intro p:last-child {
+	margin-bottom: 0;
 }
