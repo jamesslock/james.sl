@@ -1,28 +1,41 @@
-import React, {Component} from "react";
-import {Link} from 'react-router';
+import React, { Component } from "react"
+import { Link } from 'react-router'
+import styled from 'styled-components'
 
 // Import Atom Components
-import Hamburger       from '../../atoms/Hamburger/Hamburger.js';
-import Container       from '../../atoms/Container/Container.js';
-import AnimateFadeIn    from '../../atoms/Animate/AnimateFadeIn.js';
+import Hamburger       from '../../atoms/Hamburger/Hamburger.js'
+import Container       from '../../atoms/Container/Container.js'
+import AnimateFadeIn    from '../../atoms/Animate/AnimateFadeIn.js'
 
-// Import Organism Components
-import Menu    from '../../organisms/Menu/Menu.js';
+const Header = styled.header`
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 120;
+`;
 
-import s from './Nav.css'
+const MenuTrigger = styled(Hamburger)`
+  float: right;
+  position: relative;
+  z-index: 90;
+`;
+
+const HomeLink = styled(Link)`
+  float: left;
+`;
 
 export default class Nav extends Component {
 
   render() {
     return (
-      <header className={s.root}>
-        <Container size="full">
+      <Header>
+        <Container full>
           <AnimateFadeIn>
-            <Link className={s.home} to="/">JSL</Link>
-            <Hamburger className={s.menu} />
+            <HomeLink to="/">JSL</HomeLink>
+            <MenuTrigger />
           </AnimateFadeIn>
         </Container>
-      </header>
+      </Header>
     )
   }
 }

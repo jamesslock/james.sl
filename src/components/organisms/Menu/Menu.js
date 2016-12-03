@@ -1,62 +1,89 @@
-import React, {Component} from 'react';
-import {Link} from 'react-router';
+import React, { Component } from 'react'
+import { Link } from 'react-router'
+import styled from 'styled-components'
 
 // Import Atom Components
-import Container       from '../../atoms/Container/Container.js';
-import Section       from '../../atoms/Section/Section.js';
-import AnimateFadeInFast    from '../../atoms/Animate/AnimateFadeInFast.js';
-import AnimateFadeIn    from '../../atoms/Animate/AnimateFadeIn.js';
-import AnimateSlideRight    from '../../atoms/Animate/AnimateSlideRight.js';
+import Container from '../../atoms/Container/Container.js'
+import Section from '../../atoms/Section/Section.js'
+import AnimateFadeInFast from '../../atoms/Animate/AnimateFadeInFast.js'
+import AnimateFadeIn from '../../atoms/Animate/AnimateFadeIn.js'
+import AnimateSlideRight from '../../atoms/Animate/AnimateSlideRight.js'
 
-import s from './Menu.css';
-import {verticalCenter} from 'global/helpers.css';
 
 export default class Menu extends Component {
   render() {
-    const {onLinkClick} = this.props;
+    const { onLinkClick } = this.props;
 
-    const {
-      className,
-    } = this.props;
+    const Wrapper = styled.div`
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 1);
+      z-index: 10;
+      display: flex;
 
-		const classNames = [
-      s.root,
-      s ? s[s] : null,
-      className,
-    ].join(' ');
+      &:before {
+        content: "Menu";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: serif;
+        font-weight: 600;
+        padding: 20px 15px;
+      }
+    `;
+
+    const Nav = styled.nav`
+      margin: 20% 0 5%;
+      &:before,
+      &:after {
+        content: "";
+        display: table;
+      }
+      &:after {
+        clear: both;
+      }
+    `;
+
+    const NavItem = styled.nav`
+      display: block;
+      width: 50%;
+      float: left;
+      padding: 2% 0;
+      line-height: 1.2;
+      font-size: responsive 30px 60px;
+      font-range: 520px 1440px;
+    `;
 
     return (
       <AnimateFadeInFast>
-        <div className={[classNames, verticalCenter].join(' ')}>
+        <Wrapper>
           <Section>
             <Container>
-              <Container size="small" align="left">
+              <Container small left>
                 <AnimateSlideRight>
-                  <nav className={s.nav} role="navigation">
-                    <div className={s.navItem}>
+                  <Nav role="navigation">
+                    <NavItem>
                       <Link to="/" onClick={onLinkClick}>Home</Link>
-                    </div>
-                    <div className={s.navItem}>
+                    </NavItem>
+                    <NavItem>
                       <Link to="/about" onClick={onLinkClick}>About</Link>
-                    </div>
-										{/*
-                    <div className={s.navItem}>
-                      <Link to="/work" onClick={onLinkClick}>Work</Link>
-                    </div>
-                    <div className={s.navItem}>
-                      <Link to="/writing" onClick={onLinkClick}>Writing</Link>
-                    </div>*/}
-                  </nav>
+                    </NavItem>
+                  </Nav>
                 </AnimateSlideRight>
               </Container>
-              <Container size="small" align="left">
+              <Container small left>
                 <AnimateFadeIn>
                   <p>What I'm <Link to="/reading" onClick={onLinkClick}>Reading</Link></p>
                 </AnimateFadeIn>
               </Container>
             </Container>
           </Section>
-        </div>
+        </Wrapper>
       </AnimateFadeInFast>
     );
   }

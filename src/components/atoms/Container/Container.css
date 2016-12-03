@@ -18,9 +18,11 @@
 }
 .full {
   width: 100%;
-  padding: 0 15px;
+	padding: 0;
 }
-
+.inner {
+	padding: 0 10%;
+}
 /***** Container Alignment *****/
 .left {
   margin: 0;

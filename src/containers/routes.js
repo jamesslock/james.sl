@@ -14,6 +14,7 @@ import About from 'components/pages/About/About';
 import Work from 'components/pages/Work/Work';
 import Writing from 'components/pages/Writing/Writing';
 import Reading from 'components/pages/Reading/Reading';
+import TheSchoolFund from 'components/pages/TheSchoolFund/TheSchoolFund';
 import NotFound from 'components/pages/NotFound/NotFound';
 
 // Writing
@@ -35,6 +36,7 @@ module.exports = (
 			<Route path="about" component={About} />
 			<Route path="work" component={Work} />
 			<Route path="reading" component={Reading} />
+			<Route path="the-school-fund" component={TheSchoolFund} />
 
 
 			<Route path="writing">

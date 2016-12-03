@@ -4,6 +4,7 @@
     --colorGold: #C5AE87;
     --colorGoldLight: #D8CDBD;
     --colorGoldLightest: #E9DDCC;
+		--colorGoldDark: #89795d;
     --colorGray: #979797;
     --colorGrayDark: #2F2F2F;
     --colorGrayLight: #e7e7e7;
@@ -31,6 +32,7 @@
     --spacingSmall: 15px;
     --spacingMedium: 30px;
     --spacingLarge: 60px;
+		--spacingHuge: 120px;
 }
 
 /***** Typography Variables *****/

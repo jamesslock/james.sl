@@ -1,6 +1,5 @@
 /***** Section Base Component *****/
 .root {
-  position: relative;
   width: 100%;
 }
 
@@ -24,6 +23,15 @@
 .tertiary {
     background-color: var(--colorGrayLightest);
 }
+.grayDark {
+	background-color: var(--colorGrayDark);
+	color: white;
+
+	h1, h2, h3 {
+		color: white;
+	}
+}
+
 
 /***** Section Sizes *****/
 .small {
@@ -33,7 +41,7 @@
 .medium {
   padding-top: var(--spacingSmall);
 	padding-bottom: var(--spacingSmall);
-  
+
   @media only screen and (min-width: 600px) {
   	padding-top: var(--spacingMedium);
   	padding-bottom: var(--spacingMedium);
@@ -47,5 +55,14 @@
   @media only screen and (min-width: 600px) {
   	padding-top: var(--spacingLarge);
   	padding-bottom: var(--spacingLarge);
+  }
+}
+.huge {
+  padding-top: var(--spacingLarge);
+	padding-bottom: var(--spacingLarge);
+
+  @media only screen and (min-width: 600px) {
+  	padding-top: var(--spacingHuge);
+  	padding-bottom: var(--spacingHuge);
   }
 }

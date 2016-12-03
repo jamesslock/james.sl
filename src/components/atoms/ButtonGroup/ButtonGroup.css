@@ -1,0 +1,12 @@
+/***** ButtonGroup *****/
+.root {
+	display: inline-block;
+
+	a, button {
+		margin-right: 1em;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

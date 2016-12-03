@@ -17,3 +17,6 @@
 .clearfix:after {
     clear: both;
 }
+.tc {
+	text-align: center;
+}

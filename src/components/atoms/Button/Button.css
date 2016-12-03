@@ -1,0 +1,81 @@
+/***** Button Variables *****/
+:root {
+    --buttonFontSize: 13px;
+    --buttonBorderRadius: 2px;
+    --buttonPadding: 1.5em;
+    --buttonPaddingSmallest: 0.5em;
+    --buttonPaddingSmall: 1em;
+    --buttonPaddingLarge: 2em;
+    --buttonPaddingHuge: 3em;
+}
+
+/***** Button Base Component *****/
+.root {
+  /* Reset default browser styles */
+  -webkit-font-smoothing: antialiased;
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-family: inherit;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-image: none;
+  text-decoration: none;
+  position: relative;
+
+  /* Base Styles */
+  border-radius: var(--buttonBorderRadius);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-family: var(--fontSansSerif);
+  color: var(--colorGold);
+  background-color: white;
+  border: 1px solid white;
+  box-shadow:
+    rgba(0, 0, 0, 0.117647) 0px 1px 6px,
+    rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+
+  /* Base Dimentions */
+  padding: var(--buttonPadding);
+  @media (min-width: 0) { /* IE8 hack */
+    padding: 0 var(--buttonPadding);
+  }
+
+  line-height: calc(var(--buttonPadding) * 2 + 1px);
+
+  transition: background-color 0.2s ease,
+              color 0.2s ease,
+              border 0.2s ease;
+
+  /* Hover styles */
+  &:hover {
+    background-color: white;
+  }
+
+  /* Focus styles */
+  &:focus {
+    outline: 0;
+  }
+}
+
+
+/***** Button Varients *****/
+.outline {
+  background-color: transparent;
+}
+.link {
+  background-color: transparent;
+  color: white;
+  border: 0;
+
+  &:hover {
+      background-color: transparent;
+      color: white;
+  }
+}

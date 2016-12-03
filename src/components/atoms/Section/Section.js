@@ -41,7 +41,8 @@ Section.propTypes = {
   context: PropTypes.oneOf([
     'primary',
     'secondary',
-    'tertiary'
+    'tertiary',
+		'grayDark'
   ]),
   size: PropTypes.oneOf([
     'small',
